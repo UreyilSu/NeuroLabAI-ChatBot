@@ -283,12 +283,11 @@
     </style>
 </head>
 <body>
+    <header style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='images/imu.png') }}" alt="Logo" style="height: 48px;" />
+        <h1 style="margin: 0; font-weight: 700; font-size: 2rem;">NeuroLabAI</h1>
+    </header>
     <button id="darkModeToggle">Koyu Mod Aç / Kapa</button>
-    <h2 style="display: flex; align-items: center; gap: 16px; justify-content: flex-start; width: 100%; max-width: 400px;">
-      <img src="{{ url_for('static', filename='images/imu.png') }}"
-           style="height: 128px; margin-left: -20px;" />
-      NeuroLabAI ChatBot
-    </h2>
     <div id="chatbox"></div>
     <div id="input-area">
         <input type="text" id="userInput" placeholder="Mesajınızı yazın" autocomplete="off" 
@@ -412,4 +411,7 @@
         }
     </script>
 </body>
+<footer style="position: fixed; bottom: 10px; right: 10px; opacity: 0.3; font-size: 14px; font-weight: 500; color: #666; user-select: none;">
+    by Su Ureyil
+</footer>
 </html>
