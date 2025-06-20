@@ -284,8 +284,8 @@
     </style>
 </head>
 <body>
-    <header style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-        <img src="{{ url_for('static', filename='images/imu.png') }}" alt="Logo" style="height: 128px;" />
+    <header style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='images/imu.png') }}" alt="Logo" style="height: 128px; align-self: flex-start;" />
         <h1 style="margin: 0; font-weight: 700; font-size: 2rem;">NeuroLabAI</h1>
     </header>
     <button id="darkModeToggle">Koyu Mod Aç / Kapa</button>
@@ -296,7 +296,7 @@
         <button id="emojiPickerBtn" title="Profil Emojini Seç">🧑‍💻</button>
     </div>
 
-    <div id="emojiPickerPanel" style="display:none; position: fixed; bottom: 80px; right: 20px; background: #fff; border: 1px solid #ccc; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); padding: 12px; width: 220px; z-index: 1000;">
+    <div id="emojiPickerPanel" style="display:none; position: fixed; bottom: 20px; right: 40px; background: #fff; border: 1px solid #ccc; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); padding: 12px; width: 220px; z-index: 1000;">
         <div><strong>Emoji Seç</strong></div>
         <div id="emojiOptions" style="display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0;"></div>
         <div><strong>Renk Seç</strong></div>
@@ -412,7 +412,7 @@
         }
     </script>
 </body>
-<footer style="position: fixed; bottom: 10px; right: 10px; opacity: 0.3; font-size: 16px; font-weight: 500; color: #666; user-select: none;">
+<footer style="position: fixed; bottom: 10px; right: 10px; opacity: 0.3; font-size: 20px; font-weight: 500; color: #666; user-select: none;">
     by Su Ureyil
 </footer>
 </html>
